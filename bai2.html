@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập số");
+    let b = +prompt("nhập số");
+ function checkRealative  (a, b) {
+let count = 0;
+for (let i = 1; i < a; i++) {
+if (b % i == 0) {
+count += i;
+if (count == a) {
+return true;
+}
+}
+}
+return false;
+}
+console.log(checkRealative());
+</script>
+
+</body>
+</html>
